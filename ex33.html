@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brayan Rocha.</title>
+    <style>
+      body {
+        background-color: rgb(129, 129, 129);
+      }
+    </style>
+  </head>
+  <body>
+    <p>Clique no botão e gere um número aleatório (até 1000).</p>
+
+    <button id="gerarNumero" onclick="gerarNumero()">Gerar número</button>
+    <div id="resultado"></div>
+    <script>
+      function gerarNumero() {
+        document.getElementById("resultado").innerHTML = Math.floor(
+          Math.random() * 1000
+        );
+      }
+    </script>
+  </body>
+</html>

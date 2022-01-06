@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brayan Rocha.</title>
+    <style>
+      body {
+        background-color: rgb(129, 129, 129);
+      }
+    </style>
+  </head>
+  <body>
+    <p>Digite abaixo dois valores para dividi-los</p>
+    <input
+      type="number"
+      id="primeiroNumero"
+      placeholder="Digite o número aqui"
+    />
+    /
+    <input
+      type="number"
+      id="segundoNumero"
+      placeholder="Digite outro número aqui"
+    />
+
+    <button id="btnDividir" onclick="btnDividir()">Verificar</button>
+    <div id="resultado"></div>
+    <script>
+      function btnDividir() {
+        let primeiroNumero = document.getElementById("primeiroNumero").value;
+        let segundoNumero = document.getElementById("segundoNumero").value;
+        let resultado = Number(primeiroNumero) / Number(segundoNumero);
+
+        document.getElementById(
+          "resultado"
+        ).innerHTML = `O resultado da divisão é ${resultado}`;
+      }
+    </script>
+  </body>
+</html>

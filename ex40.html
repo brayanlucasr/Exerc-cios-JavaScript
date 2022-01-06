@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brayan Rocha.</title>
+    <style>
+      body {
+        background-color: rgb(129, 129, 129);
+      }
+    </style>
+  </head>
+  <body>
+    <p>Números:</p>
+    <input type="number" name="frutas" id="frutas" />
+    <br />
+    <button id="add-numero">Adicionar Número</button>
+
+    <ul id="lista-frutas"></ul>
+    <script>
+      const btnAddFruta = document.getElementById("add-numero");
+      const inputFrutas = document.getElementById("frutas");
+      const ulFrutas = document.getElementById("lista-frutas");
+
+      btnAddFruta.addEventListener("click", () => {
+        if (inputFrutas.value.trim() == "") {
+          alert("Preencha a fruta corretamente");
+          return false;
+        }
+
+        const valueNumeros = parseInt(inputFrutas.value);
+
+        if (valueNumeros % 2 == 0) {
+          var strongEl = document.createElement("strong");
+          strongEl.appendChild(document.createTextNode(valueNumeros));
+
+          var no = document.createElement("li");
+          no.appendChild(strongEl);
+        } else {
+          var no = document.createElement("li");
+          no.appendChild(document.createTextNode(valueNumeros));
+        }
+        ulFrutas.appendChild(no);
+      });
+    </script>
+  </body>
+</html>

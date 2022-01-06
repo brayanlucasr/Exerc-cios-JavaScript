@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brayan Rocha.</title>
+    <style>
+      body {
+        background-color: rgb(129, 129, 129);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btnFuncao" onclick="listaArray()">Clique em mim :D</button>
+    <ul id="lista"></ul>
+
+    <script>
+      let nome = ["Brayan", "Lucas", "Rocha."];
+
+      function listaArray() {
+        document.getElementById(
+          "lista"
+        ).innerHTML = `Olá, é um prazer, me chamo ${nome}`;
+      }
+    </script>
+  </body>
+</html>

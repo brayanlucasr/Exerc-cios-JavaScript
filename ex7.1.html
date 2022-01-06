@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brayan Rocha.</title>
+    <style>
+      body {
+        background-color: rgb(129, 129, 129);
+      }
+    </style>
+  </head>
+  <!--Faça 2 campos no HTML chamados: 'Nome', 'Sobrenome' e um botão 'Saudação'; ao clicar no botão exibir um alert: 'Olá {NOME} {SOBRENOME}'-->
+  <body>
+    <p>Digite o seu nome nos campos abaixo:</p>
+    Nome <input type="text" id="nome" /> <br /><br />
+    Sobrenome <input type="text" id="sobrenome" />
+
+    <br /><br />
+    <button onmouseover="saudacao()">Saudação</button>
+    <script>
+      function saudacao() {
+        const nome = document.getElementById("nome").value;
+        const sobrenome = document.getElementById("sobrenome").value;
+        alert("Olá, seja bem-vindo " + nome + " " + sobrenome);
+      }
+    </script>
+  </body>
+</html>

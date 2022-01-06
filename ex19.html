@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brayan Rocha.</title>
+    <style>
+      body {
+        background-color: rgb(129, 129, 129);
+      }
+    </style>
+  </head>
+  <body>
+    <p>Digite abaixo um valor para saber se é par ou impar.</p>
+    <input type="number" id="numero" placeholder="Digite o número aqui" />
+    <button id="btnVerificar" onclick="btnVerificar()">Verificar</button>
+    <div id="resultado"></div>
+    <script>
+      function btnVerificar() {
+        let numero = parseInt(document.getElementById("numero").value);
+        let total = numero;
+        if (numero & 1) {
+          document.getElementById(
+            "resultado"
+          ).innerHTML = `O número ${numero} é Impar`;
+        } else {
+          document.getElementById(
+            "resultado"
+          ).innerHTML = `O número ${numero} é Par`;
+        }
+      }
+
+      /*
+      let numero = "Digite um numero";
+      let total;
+
+      if (numero & 1) {
+        ("Impar");
+      } else {
+        ("Par");
+      }
+      */
+    </script>
+  </body>
+</html>

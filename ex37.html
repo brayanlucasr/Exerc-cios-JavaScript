@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brayan Rocha.</title>
+    <style>
+      body {
+        background-color: rgb(129, 129, 129);
+      }
+    </style>
+  </head>
+  <body>
+    <p id="resultado"></p>
+
+    <script>
+      /*37(a) Crie o seguinte array: var deuses = ['Aegir', 'Aud', 'Balder']
+      E Exiba a quantidade/comprimento que ele (length).*/
+
+      let deuses = ["Aegir", "Aud", "Balder"];
+      let length = deuses.length;
+      document.getElementById(
+        "resultado"
+      ).innerHTML = `A quantidade de deuses no array é igual a: ${length}.`;
+
+      /* 37(b) Crie o seguinte array: var deuses = ['Aegir', 'Aud', 'Balder']
+      E exiba um a um com alert() - De preferencia para laços de repetição (for, forEach, while, do{}while)
+
+      let deuses = ["Aegir", "Aud", "Balder"];
+      for (let array of deuses) {
+        alert(array);
+      }
+      */
+
+      /* 37(c)Crie o seguinte array: var deuses = ['Aegir', 'Aud', 'Balder'] e
+       exiba um a um com alert()- De preferencia para funções com callbacks, Ex:(map, reduce, filter)
+
+       let deuses = ["Aegir", "Aud", "Balder"];
+      function filterItems(query) {
+        return deuses.filter(function (el) {
+          return el.toLowerCase().indexOf(query.toLowerCase()) > -1;
+        });
+      }
+      alert(filterItems("Ae"));
+      alert(filterItems("Aud"));
+      alert(filterItems("Bal"));
+      */
+
+      /* 37(d)Crie o seguinte array: var deuses = ['Aegir', 'Aud', 'Balder']
+      Adicione os 3 Deuses: ('Loki', 'Odin', 'Frey') com a função push()
+
+      let deuses = ["Aegir", "Aud", "Balder"];
+      deuses.push("Loki", "Odin", "Frey");
+      console.log(deuses);
+      */
+
+      /* 37(f) Crie o seguinte array: var numbers = [5, 7, 1, 8, 9] E exiba de forma crescente.
+       
+      let numbers = [5, 7, 1, 8, 9];
+      numbers.sort(function (a, b) {
+        return a - b;
+      });
+      console.log(numbers);
+      */
+
+      /* 37(g)Crie o seguinte array: var numbers = [5, 7, 1, 8, 9] E exiba de forma decrescente.
+      
+      let numbers = [5, 7, 1, 8, 9];
+      numbers.sort(function (a, b) {
+        return b - a;
+      });
+      console.log(numbers);
+      */
+    </script>
+  </body>
+</html>

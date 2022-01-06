@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brayan Rocha.</title>
+    <style>
+      body {
+        background-color: rgb(129, 129, 129);
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      id="lampadaApagada"
+      src="https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true"
+      alt="Lampada apagada"
+    />
+
+    <script>
+      //aprenda a usar o 'mouseover', ao passar o mouse em cima da 'lampada.jpg' altere ela para 'lampada-on.jpg'.
+      function lapandaOn() {
+        document.getElementById("lampadaApagada").src =
+          "https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada-on.jpg?raw=true";
+      }
+
+      function lanpadaOff() {
+        document.getElementById("lampadaApagada").src =
+          "https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true";
+      }
+
+      document
+        .getElementById("lampadaApagada")
+        .addEventListener("mouseover", lapandaOn);
+      document
+        .getElementById("lampadaApagada")
+        .addEventListener("mouseleave", lanpadaOff);
+    </script>
+  </body>
+</html>

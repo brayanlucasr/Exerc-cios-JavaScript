@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brayan Rocha.</title>
+    <style>
+      body {
+        background-color: rgb(129, 129, 129);
+      }
+    </style>
+  </head>
+  <body>
+    <p id="diaDeHoje"></p>
+    <script>
+      let today = new Date().toLocaleDateString();
+
+      document.getElementById("diaDeHoje").innerHTML = `Hoje é dia ${today}`;
+    </script>
+  </body>
+</html>
